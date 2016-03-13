@@ -91,23 +91,30 @@ date. There should be four PNG files and four R code files.
 
 The four plots that you will need to construct are shown below. 
 
+## Running Code
+* To subset data only to specific dates, run subsetConsumption with 
+the household_power_comnsumption.txt downloaded. The file "small.txt"
+is the result of this.
+* Running the script for each plot will generator a png file with the 
+dataframe readed from small.txt as input. 
+
 
 ### Plot 1
 
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot1](plot1.png) 
 
 
 ### Plot 2
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot2](plot2.png) 
 
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot3](plot3.png) 
 
 
 ### Plot 4
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![plot4](plot4.png) 
