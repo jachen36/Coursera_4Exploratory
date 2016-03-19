@@ -1,3 +1,5 @@
+library(ggplot2)
+
 plot4 <- function(){
   ## Read data from data frame file
   NEI <- readRDS("Data/summarySCC_PM25.rds")
@@ -14,10 +16,11 @@ plot4 <- function(){
   dataFrame <- data.frame(year= as.integer(names(totalPM25)), total = totalPM25)
   
   ## Plot data and save on a png format
-  png("plot4.png")
-  with(dF, plot(year, 
-                totalPM25, 
-                type="l",
-                main =" Coal Combustion-Related Source"))
-  dev.off()
+  q <- qplot(year, 
+        total, 
+        data=dataFrame, 
+        geom=c("point", "path"),
+        ylab= "TotalPM2.5(ton)",
+        main="Coal Combustion-Related Source")
+  ggsave(file="plot4.png")
 }
